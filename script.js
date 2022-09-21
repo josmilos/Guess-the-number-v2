@@ -6,10 +6,6 @@ let count = document.querySelector('#count');
 
 function generateNumber(){
     correctNumber = parseInt(Math.floor(Math.random() * 10) + 1);
-
-    if(correctNumber <= 0 || correctNumber >= 11){
-        generateNumber();
-    }
 }
 
 function guess(){
