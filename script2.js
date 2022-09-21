@@ -21,7 +21,7 @@ function guess(){
         
         return;
     }
-    else if(guessedNumber <= 0 || guessedNumber >= 11){
+    else if(guessedNumber < 1 || guessedNumber > 10){
         element = document.querySelector('#paragraph')
         element.setAttribute('style', 'color:darkred');
         element.style.display="block";
